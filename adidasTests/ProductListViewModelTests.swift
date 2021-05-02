@@ -32,10 +32,10 @@ class ProductListViewModelTests: XCTestCase {
         getProducts()
         
         let filteredProductsByName = productListViewModel.filteredCachedProducts(using: "OND NA")
-        XCTAssertEqual(filteredProductsByName, allProducts.suffix(1))
+        XCTAssertEqual(filteredProductsByName.map(\.name), allProducts.suffix(1).map(\.name))
         
         let filteredProductsByDescription = productListViewModel.filteredCachedProducts(using: "first des")
-        XCTAssertEqual(filteredProductsByDescription, Array(allProducts.prefix(1)))
+        XCTAssertEqual(filteredProductsByDescription.map(\.name), Array(allProducts.prefix(1)).map(\.name))
     }
     
     func testUnsuccessFulSearch() {
@@ -59,10 +59,10 @@ class ProductListViewModelTests: XCTestCase {
         getProducts()
         
         let filteredProductsByEmptyString = productListViewModel.filteredCachedProducts(using: "")
-        XCTAssertEqual(allProducts, filteredProductsByEmptyString)
+        XCTAssertEqual(allProducts.map(\.name), filteredProductsByEmptyString.map(\.name))
         
         let filteredProductsByNilString = productListViewModel.filteredCachedProducts(using: nil)
-        XCTAssertEqual(allProducts, filteredProductsByNilString)
+        XCTAssertEqual(allProducts.map(\.name), filteredProductsByNilString.map(\.name))
     }
     
     // MARK: - Helpers
