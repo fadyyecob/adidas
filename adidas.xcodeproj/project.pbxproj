@@ -26,6 +26,9 @@
 		B1C78146263F132500E09781 /* ProductReviewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C78145263F132500E09781 /* ProductReviewsView.swift */; };
 		B1C7814C263F138C00E09781 /* ProductReviewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C7814B263F138C00E09781 /* ProductReviewsViewModel.swift */; };
 		B1C78154263F193C00E09781 /* ProductReviewItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C78153263F193C00E09781 /* ProductReviewItemViewModel.swift */; };
+		B1C7815A263F1B7D00E09781 /* ReviewsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C78159263F1B7D00E09781 /* ReviewsRepository.swift */; };
+		B1C7815F263F228800E09781 /* AddProductReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C7815E263F228700E09781 /* AddProductReviewView.swift */; };
+		B1C78165263F27E100E09781 /* AddProductReviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C78164263F27E100E09781 /* AddProductReviewViewModel.swift */; };
 		B1CA5996263CC5DC00A94B94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA5995263CC5DC00A94B94 /* AppDelegate.swift */; };
 		B1CA5998263CC5DC00A94B94 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA5997263CC5DC00A94B94 /* SceneDelegate.swift */; };
 		B1CA599F263CC5E700A94B94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1CA599E263CC5E700A94B94 /* Assets.xcassets */; };
@@ -77,6 +80,9 @@
 		B1C78145263F132500E09781 /* ProductReviewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductReviewsView.swift; sourceTree = "<group>"; };
 		B1C7814B263F138C00E09781 /* ProductReviewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductReviewsViewModel.swift; sourceTree = "<group>"; };
 		B1C78153263F193C00E09781 /* ProductReviewItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductReviewItemViewModel.swift; sourceTree = "<group>"; };
+		B1C78159263F1B7D00E09781 /* ReviewsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsRepository.swift; sourceTree = "<group>"; };
+		B1C7815E263F228700E09781 /* AddProductReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductReviewView.swift; sourceTree = "<group>"; };
+		B1C78164263F27E100E09781 /* AddProductReviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductReviewViewModel.swift; sourceTree = "<group>"; };
 		B1CA5992263CC5DC00A94B94 /* adidas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = adidas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1CA5995263CC5DC00A94B94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1CA5997263CC5DC00A94B94 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -182,8 +188,27 @@
 				B1C78145263F132500E09781 /* ProductReviewsView.swift */,
 				B1C7814B263F138C00E09781 /* ProductReviewsViewModel.swift */,
 				B1C78153263F193C00E09781 /* ProductReviewItemViewModel.swift */,
+				B1C78163263F27C500E09781 /* AddReview */,
 			);
 			path = Reviews;
+			sourceTree = "<group>";
+		};
+		B1C78158263F1B2800E09781 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				B1CA59D4263CC9A800A94B94 /* ProductsRepository.swift */,
+				B1C78159263F1B7D00E09781 /* ReviewsRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		B1C78163263F27C500E09781 /* AddReview */ = {
+			isa = PBXGroup;
+			children = (
+				B1C7815E263F228700E09781 /* AddProductReviewView.swift */,
+				B1C78164263F27E100E09781 /* AddProductReviewViewModel.swift */,
+			);
+			path = AddReview;
 			sourceTree = "<group>";
 		};
 		B1CA5989263CC5DC00A94B94 = {
@@ -245,7 +270,7 @@
 		B1CA59C8263CC67200A94B94 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				B1CA59D4263CC9A800A94B94 /* ProductsRepository.swift */,
+				B1C78158263F1B2800E09781 /* Repository */,
 				B1CA59D3263CC8FF00A94B94 /* Model */,
 				B15DF91F263DFE7000A2690C /* Networking */,
 			);
@@ -397,6 +422,7 @@
 				B1CA59E9263CCE5A00A94B94 /* URLComponents+makeAdidas.swift in Sources */,
 				B15DF928263DFFC500A2690C /* ProductListViewModel.swift in Sources */,
 				B1C78123263EF29B00E09781 /* ProductDetailsViewModel.swift in Sources */,
+				B1C7815F263F228800E09781 /* AddProductReviewView.swift in Sources */,
 				B1C78136263F048900E09781 /* ImageLoader.swift in Sources */,
 				B1C7814C263F138C00E09781 /* ProductReviewsViewModel.swift in Sources */,
 				B1CA59E1263CCA5F00A94B94 /* URLRequest+makeAdidas.swift in Sources */,
@@ -408,6 +434,8 @@
 				B1CA5996263CC5DC00A94B94 /* AppDelegate.swift in Sources */,
 				B1C78116263EEACC00E09781 /* ProductDetailsView.swift in Sources */,
 				B1682579263EE58A001D273C /* UIAlertController+error.swift in Sources */,
+				B1C7815A263F1B7D00E09781 /* ReviewsRepository.swift in Sources */,
+				B1C78165263F27E100E09781 /* AddProductReviewViewModel.swift in Sources */,
 				B1CA5998263CC5DC00A94B94 /* SceneDelegate.swift in Sources */,
 				B15DF948263E04EE00A2690C /* ProductListViewController.swift in Sources */,
 				B1408C02263E328D00D58597 /* UIImage+load.swift in Sources */,

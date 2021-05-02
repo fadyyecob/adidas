@@ -8,11 +8,11 @@
 import Foundation
 
 extension URLComponents {
-    static func makeAdidas(path: String) -> Self {
+    static func makeAdidas(path: String, port: Int?) -> Self {
         var urlComponents = URLComponents()
         urlComponents.scheme = "http"
         urlComponents.host = "localhost"
-        urlComponents.port = 3001
+        urlComponents.port = port
         urlComponents.path = path
         
         return urlComponents

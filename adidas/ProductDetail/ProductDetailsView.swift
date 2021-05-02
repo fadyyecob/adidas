@@ -11,6 +11,7 @@ struct ProductDetailsView: View {
     let viewModel: ProductDetailsViewModel
     @State private var image = UIImage()
     @State private var finishedLoading = false
+    @State private var presentReview = false
     
     var body: some View {
         ScrollView {
@@ -21,7 +22,18 @@ struct ProductDetailsView: View {
                 ProductReviewsView(viewModel: viewModel.productReviewViewModel)
                 Spacer()
             }
-        }.navigationTitle(viewModel.productName)
+        }
+        .navigationTitle(viewModel.productName)
+        .navigationBarItems(trailing: reviewsButton)
+    }
+    
+    private var reviewsButton: some View {
+        Button("Add Review") {
+            presentReview.toggle()
+        }
+        .sheet(isPresented: $presentReview) {
+            AddProductReviewView(viewModel: AddProductReviewViewModel(productID: viewModel.id))
+        }
     }
     
     private var productImageView: some View {

@@ -9,6 +9,7 @@ import UIKit
 import SwiftUI
 
 class ProductDetailsViewModel {
+    let id: String
     let productName: String
     let currencyAndPrice: String
     let description: String
@@ -16,7 +17,8 @@ class ProductDetailsViewModel {
     
     @ObservedObject var imageLoader: ImageLoader
     
-    init(product: Product) {        
+    init(product: Product) {
+        id = product.id
         productName = product.name
         imageLoader = ImageLoader(url: product.imageURL)
         currencyAndPrice = CurrencyFormatter(currency: product.currency).string(from: NSDecimalNumber(decimal: product.price)) ?? ""
