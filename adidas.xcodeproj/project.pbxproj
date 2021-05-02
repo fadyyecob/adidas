@@ -1,0 +1,746 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B1408C02263E328D00D58597 /* UIImage+load.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1408C01263E328D00D58597 /* UIImage+load.swift */; };
+		B1408C07263E32BC00D58597 /* UIImage+scalePreservingAspectRatio.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1408C06263E32BC00D58597 /* UIImage+scalePreservingAspectRatio.swift */; };
+		B1408C13263E37E200D58597 /* ProductListViewController+Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1408C12263E37E200D58597 /* ProductListViewController+Section.swift */; };
+		B1408C1B263ED77F00D58597 /* ProductListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1408C1A263ED77F00D58597 /* ProductListViewModelTests.swift */; };
+		B1408C23263ED87E00D58597 /* ProductsRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1408C22263ED87E00D58597 /* ProductsRepositoryMock.swift */; };
+		B1408C2B263ED96E00D58597 /* Product+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1408C2A263ED96E00D58597 /* Product+Mock.swift */; };
+		B15DF928263DFFC500A2690C /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15DF927263DFFC500A2690C /* ProductListViewModel.swift */; };
+		B15DF92D263E023300A2690C /* ProductListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15DF92C263E023300A2690C /* ProductListItemViewModel.swift */; };
+		B15DF948263E04EE00A2690C /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15DF946263E04EE00A2690C /* ProductListViewController.swift */; };
+		B15DF949263E04EE00A2690C /* ProductListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B15DF947263E04EE00A2690C /* ProductListViewController.xib */; };
+		B1682579263EE58A001D273C /* UIAlertController+error.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1682578263EE58A001D273C /* UIAlertController+error.swift */; };
+		B1C78116263EEACC00E09781 /* ProductDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C78115263EEACC00E09781 /* ProductDetailsView.swift */; };
+		B1C7811B263EEB0300E09781 /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C7811A263EEB0300E09781 /* ProductDetailsViewController.swift */; };
+		B1C78123263EF29B00E09781 /* ProductDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C78122263EF29B00E09781 /* ProductDetailsViewModel.swift */; };
+		B1C78136263F048900E09781 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C78135263F048900E09781 /* ImageLoader.swift */; };
+		B1C78141263F0EEF00E09781 /* CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C78140263F0EEF00E09781 /* CurrencyFormatter.swift */; };
+		B1C78146263F132500E09781 /* ProductReviewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C78145263F132500E09781 /* ProductReviewsView.swift */; };
+		B1C7814C263F138C00E09781 /* ProductReviewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C7814B263F138C00E09781 /* ProductReviewsViewModel.swift */; };
+		B1C78154263F193C00E09781 /* ProductReviewItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C78153263F193C00E09781 /* ProductReviewItemViewModel.swift */; };
+		B1CA5996263CC5DC00A94B94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA5995263CC5DC00A94B94 /* AppDelegate.swift */; };
+		B1CA5998263CC5DC00A94B94 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA5997263CC5DC00A94B94 /* SceneDelegate.swift */; };
+		B1CA599F263CC5E700A94B94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1CA599E263CC5E700A94B94 /* Assets.xcassets */; };
+		B1CA59A2263CC5E700A94B94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1CA59A0263CC5E700A94B94 /* LaunchScreen.storyboard */; };
+		B1CA59B8263CC5E800A94B94 /* adidasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA59B7263CC5E800A94B94 /* adidasUITests.swift */; };
+		B1CA59CA263CC6C600A94B94 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA59C9263CC6C600A94B94 /* Product.swift */; };
+		B1CA59CF263CC7E400A94B94 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA59CE263CC7E400A94B94 /* Review.swift */; };
+		B1CA59D5263CC9A800A94B94 /* ProductsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA59D4263CC9A800A94B94 /* ProductsRepository.swift */; };
+		B1CA59E1263CCA5F00A94B94 /* URLRequest+makeAdidas.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA59E0263CCA5F00A94B94 /* URLRequest+makeAdidas.swift */; };
+		B1CA59E9263CCE5A00A94B94 /* URLComponents+makeAdidas.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA59E8263CCE5A00A94B94 /* URLComponents+makeAdidas.swift */; };
+		B1CA59F1263CD01600A94B94 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA59F0263CD01600A94B94 /* HTTPMethod.swift */; };
+		B1CA59F6263CD1AE00A94B94 /* URLSession+Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA59F5263CD1AE00A94B94 /* URLSession+Result.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B1CA59A9263CC5E800A94B94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1CA598A263CC5DC00A94B94 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1CA5991263CC5DC00A94B94;
+			remoteInfo = adidas;
+		};
+		B1CA59B4263CC5E800A94B94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1CA598A263CC5DC00A94B94 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1CA5991263CC5DC00A94B94;
+			remoteInfo = adidas;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B1408C01263E328D00D58597 /* UIImage+load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+load.swift"; sourceTree = "<group>"; };
+		B1408C06263E32BC00D58597 /* UIImage+scalePreservingAspectRatio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+scalePreservingAspectRatio.swift"; sourceTree = "<group>"; };
+		B1408C12263E37E200D58597 /* ProductListViewController+Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductListViewController+Section.swift"; sourceTree = "<group>"; };
+		B1408C1A263ED77F00D58597 /* ProductListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModelTests.swift; sourceTree = "<group>"; };
+		B1408C22263ED87E00D58597 /* ProductsRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsRepositoryMock.swift; sourceTree = "<group>"; };
+		B1408C2A263ED96E00D58597 /* Product+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product+Mock.swift"; sourceTree = "<group>"; };
+		B15DF927263DFFC500A2690C /* ProductListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModel.swift; sourceTree = "<group>"; };
+		B15DF92C263E023300A2690C /* ProductListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListItemViewModel.swift; sourceTree = "<group>"; };
+		B15DF946263E04EE00A2690C /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+		B15DF947263E04EE00A2690C /* ProductListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductListViewController.xib; sourceTree = "<group>"; };
+		B1682578263EE58A001D273C /* UIAlertController+error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+error.swift"; sourceTree = "<group>"; };
+		B1C78115263EEACC00E09781 /* ProductDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsView.swift; sourceTree = "<group>"; };
+		B1C7811A263EEB0300E09781 /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewController.swift; sourceTree = "<group>"; };
+		B1C78122263EF29B00E09781 /* ProductDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewModel.swift; sourceTree = "<group>"; };
+		B1C78135263F048900E09781 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		B1C78140263F0EEF00E09781 /* CurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatter.swift; sourceTree = "<group>"; };
+		B1C78145263F132500E09781 /* ProductReviewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductReviewsView.swift; sourceTree = "<group>"; };
+		B1C7814B263F138C00E09781 /* ProductReviewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductReviewsViewModel.swift; sourceTree = "<group>"; };
+		B1C78153263F193C00E09781 /* ProductReviewItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductReviewItemViewModel.swift; sourceTree = "<group>"; };
+		B1CA5992263CC5DC00A94B94 /* adidas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = adidas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1CA5995263CC5DC00A94B94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B1CA5997263CC5DC00A94B94 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B1CA599E263CC5E700A94B94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B1CA59A1263CC5E700A94B94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B1CA59A3263CC5E700A94B94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1CA59A8263CC5E800A94B94 /* adidasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = adidasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1CA59AE263CC5E800A94B94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1CA59B3263CC5E800A94B94 /* adidasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = adidasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1CA59B7263CC5E800A94B94 /* adidasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = adidasUITests.swift; sourceTree = "<group>"; };
+		B1CA59B9263CC5E800A94B94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1CA59C9263CC6C600A94B94 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		B1CA59CE263CC7E400A94B94 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		B1CA59D4263CC9A800A94B94 /* ProductsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsRepository.swift; sourceTree = "<group>"; };
+		B1CA59E0263CCA5F00A94B94 /* URLRequest+makeAdidas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+makeAdidas.swift"; sourceTree = "<group>"; };
+		B1CA59E8263CCE5A00A94B94 /* URLComponents+makeAdidas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLComponents+makeAdidas.swift"; sourceTree = "<group>"; };
+		B1CA59F0263CD01600A94B94 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		B1CA59F5263CD1AE00A94B94 /* URLSession+Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Result.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B1CA598F263CC5DC00A94B94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1CA59A5263CC5E800A94B94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1CA59B0263CC5E800A94B94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B1408C00263E324F00D58597 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B1408C01263E328D00D58597 /* UIImage+load.swift */,
+				B1408C06263E32BC00D58597 /* UIImage+scalePreservingAspectRatio.swift */,
+				B1682578263EE58A001D273C /* UIAlertController+error.swift */,
+				B1C78135263F048900E09781 /* ImageLoader.swift */,
+				B1C78140263F0EEF00E09781 /* CurrencyFormatter.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B1408C0B263E341300D58597 /* ProductDetail */ = {
+			isa = PBXGroup;
+			children = (
+				B1C7811A263EEB0300E09781 /* ProductDetailsViewController.swift */,
+				B1C78115263EEACC00E09781 /* ProductDetailsView.swift */,
+				B1C78122263EF29B00E09781 /* ProductDetailsViewModel.swift */,
+			);
+			path = ProductDetail;
+			sourceTree = "<group>";
+		};
+		B1408C2F263ED99900D58597 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				B1408C2A263ED96E00D58597 /* Product+Mock.swift */,
+				B1408C22263ED87E00D58597 /* ProductsRepositoryMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		B15DF91F263DFE7000A2690C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B1CA59F5263CD1AE00A94B94 /* URLSession+Result.swift */,
+				B1CA59E8263CCE5A00A94B94 /* URLComponents+makeAdidas.swift */,
+				B1CA59E0263CCA5F00A94B94 /* URLRequest+makeAdidas.swift */,
+				B1CA59F0263CD01600A94B94 /* HTTPMethod.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		B15DF923263DFF6E00A2690C /* ProductList */ = {
+			isa = PBXGroup;
+			children = (
+				B15DF946263E04EE00A2690C /* ProductListViewController.swift */,
+				B15DF947263E04EE00A2690C /* ProductListViewController.xib */,
+				B15DF927263DFFC500A2690C /* ProductListViewModel.swift */,
+				B1408C12263E37E200D58597 /* ProductListViewController+Section.swift */,
+				B15DF92C263E023300A2690C /* ProductListItemViewModel.swift */,
+			);
+			path = ProductList;
+			sourceTree = "<group>";
+		};
+		B1C7814A263F135000E09781 /* Reviews */ = {
+			isa = PBXGroup;
+			children = (
+				B1C78145263F132500E09781 /* ProductReviewsView.swift */,
+				B1C7814B263F138C00E09781 /* ProductReviewsViewModel.swift */,
+				B1C78153263F193C00E09781 /* ProductReviewItemViewModel.swift */,
+			);
+			path = Reviews;
+			sourceTree = "<group>";
+		};
+		B1CA5989263CC5DC00A94B94 = {
+			isa = PBXGroup;
+			children = (
+				B1CA5994263CC5DC00A94B94 /* adidas */,
+				B1CA59AB263CC5E800A94B94 /* adidasTests */,
+				B1CA59B6263CC5E800A94B94 /* adidasUITests */,
+				B1CA5993263CC5DC00A94B94 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B1CA5993263CC5DC00A94B94 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1CA5992263CC5DC00A94B94 /* adidas.app */,
+				B1CA59A8263CC5E800A94B94 /* adidasTests.xctest */,
+				B1CA59B3263CC5E800A94B94 /* adidasUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1CA5994263CC5DC00A94B94 /* adidas */ = {
+			isa = PBXGroup;
+			children = (
+				B1CA5995263CC5DC00A94B94 /* AppDelegate.swift */,
+				B1CA5997263CC5DC00A94B94 /* SceneDelegate.swift */,
+				B15DF923263DFF6E00A2690C /* ProductList */,
+				B1408C0B263E341300D58597 /* ProductDetail */,
+				B1C7814A263F135000E09781 /* Reviews */,
+				B1CA59C8263CC67200A94B94 /* Core */,
+				B1408C00263E324F00D58597 /* Helpers */,
+				B1CA599E263CC5E700A94B94 /* Assets.xcassets */,
+				B1CA59A0263CC5E700A94B94 /* LaunchScreen.storyboard */,
+				B1CA59A3263CC5E700A94B94 /* Info.plist */,
+			);
+			path = adidas;
+			sourceTree = "<group>";
+		};
+		B1CA59AB263CC5E800A94B94 /* adidasTests */ = {
+			isa = PBXGroup;
+			children = (
+				B1408C1A263ED77F00D58597 /* ProductListViewModelTests.swift */,
+				B1408C2F263ED99900D58597 /* Mocks */,
+				B1CA59AE263CC5E800A94B94 /* Info.plist */,
+			);
+			path = adidasTests;
+			sourceTree = "<group>";
+		};
+		B1CA59B6263CC5E800A94B94 /* adidasUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B1CA59B7263CC5E800A94B94 /* adidasUITests.swift */,
+				B1CA59B9263CC5E800A94B94 /* Info.plist */,
+			);
+			path = adidasUITests;
+			sourceTree = "<group>";
+		};
+		B1CA59C8263CC67200A94B94 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B1CA59D4263CC9A800A94B94 /* ProductsRepository.swift */,
+				B1CA59D3263CC8FF00A94B94 /* Model */,
+				B15DF91F263DFE7000A2690C /* Networking */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B1CA59D3263CC8FF00A94B94 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B1CA59C9263CC6C600A94B94 /* Product.swift */,
+				B1CA59CE263CC7E400A94B94 /* Review.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B1CA5991263CC5DC00A94B94 /* adidas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1CA59BC263CC5E900A94B94 /* Build configuration list for PBXNativeTarget "adidas" */;
+			buildPhases = (
+				B1CA598E263CC5DC00A94B94 /* Sources */,
+				B1CA598F263CC5DC00A94B94 /* Frameworks */,
+				B1CA5990263CC5DC00A94B94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = adidas;
+			productName = adidas;
+			productReference = B1CA5992263CC5DC00A94B94 /* adidas.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B1CA59A7263CC5E800A94B94 /* adidasTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1CA59BF263CC5E900A94B94 /* Build configuration list for PBXNativeTarget "adidasTests" */;
+			buildPhases = (
+				B1CA59A4263CC5E800A94B94 /* Sources */,
+				B1CA59A5263CC5E800A94B94 /* Frameworks */,
+				B1CA59A6263CC5E800A94B94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1CA59AA263CC5E800A94B94 /* PBXTargetDependency */,
+			);
+			name = adidasTests;
+			productName = adidasTests;
+			productReference = B1CA59A8263CC5E800A94B94 /* adidasTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B1CA59B2263CC5E800A94B94 /* adidasUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1CA59C2263CC5E900A94B94 /* Build configuration list for PBXNativeTarget "adidasUITests" */;
+			buildPhases = (
+				B1CA59AF263CC5E800A94B94 /* Sources */,
+				B1CA59B0263CC5E800A94B94 /* Frameworks */,
+				B1CA59B1263CC5E800A94B94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1CA59B5263CC5E800A94B94 /* PBXTargetDependency */,
+			);
+			name = adidasUITests;
+			productName = adidasUITests;
+			productReference = B1CA59B3263CC5E800A94B94 /* adidasUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1CA598A263CC5DC00A94B94 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					B1CA5991263CC5DC00A94B94 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					B1CA59A7263CC5E800A94B94 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = B1CA5991263CC5DC00A94B94;
+					};
+					B1CA59B2263CC5E800A94B94 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = B1CA5991263CC5DC00A94B94;
+					};
+				};
+			};
+			buildConfigurationList = B1CA598D263CC5DC00A94B94 /* Build configuration list for PBXProject "adidas" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B1CA5989263CC5DC00A94B94;
+			productRefGroup = B1CA5993263CC5DC00A94B94 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1CA5991263CC5DC00A94B94 /* adidas */,
+				B1CA59A7263CC5E800A94B94 /* adidasTests */,
+				B1CA59B2263CC5E800A94B94 /* adidasUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B1CA5990263CC5DC00A94B94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1CA59A2263CC5E700A94B94 /* LaunchScreen.storyboard in Resources */,
+				B1CA599F263CC5E700A94B94 /* Assets.xcassets in Resources */,
+				B15DF949263E04EE00A2690C /* ProductListViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1CA59A6263CC5E800A94B94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1CA59B1263CC5E800A94B94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B1CA598E263CC5DC00A94B94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B15DF92D263E023300A2690C /* ProductListItemViewModel.swift in Sources */,
+				B1CA59CF263CC7E400A94B94 /* Review.swift in Sources */,
+				B1C78154263F193C00E09781 /* ProductReviewItemViewModel.swift in Sources */,
+				B1CA59E9263CCE5A00A94B94 /* URLComponents+makeAdidas.swift in Sources */,
+				B15DF928263DFFC500A2690C /* ProductListViewModel.swift in Sources */,
+				B1C78123263EF29B00E09781 /* ProductDetailsViewModel.swift in Sources */,
+				B1C78136263F048900E09781 /* ImageLoader.swift in Sources */,
+				B1C7814C263F138C00E09781 /* ProductReviewsViewModel.swift in Sources */,
+				B1CA59E1263CCA5F00A94B94 /* URLRequest+makeAdidas.swift in Sources */,
+				B1408C07263E32BC00D58597 /* UIImage+scalePreservingAspectRatio.swift in Sources */,
+				B1C78146263F132500E09781 /* ProductReviewsView.swift in Sources */,
+				B1CA59CA263CC6C600A94B94 /* Product.swift in Sources */,
+				B1CA59F1263CD01600A94B94 /* HTTPMethod.swift in Sources */,
+				B1CA59D5263CC9A800A94B94 /* ProductsRepository.swift in Sources */,
+				B1CA5996263CC5DC00A94B94 /* AppDelegate.swift in Sources */,
+				B1C78116263EEACC00E09781 /* ProductDetailsView.swift in Sources */,
+				B1682579263EE58A001D273C /* UIAlertController+error.swift in Sources */,
+				B1CA5998263CC5DC00A94B94 /* SceneDelegate.swift in Sources */,
+				B15DF948263E04EE00A2690C /* ProductListViewController.swift in Sources */,
+				B1408C02263E328D00D58597 /* UIImage+load.swift in Sources */,
+				B1C7811B263EEB0300E09781 /* ProductDetailsViewController.swift in Sources */,
+				B1408C13263E37E200D58597 /* ProductListViewController+Section.swift in Sources */,
+				B1C78141263F0EEF00E09781 /* CurrencyFormatter.swift in Sources */,
+				B1CA59F6263CD1AE00A94B94 /* URLSession+Result.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1CA59A4263CC5E800A94B94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1408C2B263ED96E00D58597 /* Product+Mock.swift in Sources */,
+				B1408C1B263ED77F00D58597 /* ProductListViewModelTests.swift in Sources */,
+				B1408C23263ED87E00D58597 /* ProductsRepositoryMock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1CA59AF263CC5E800A94B94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1CA59B8263CC5E800A94B94 /* adidasUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B1CA59AA263CC5E800A94B94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1CA5991263CC5DC00A94B94 /* adidas */;
+			targetProxy = B1CA59A9263CC5E800A94B94 /* PBXContainerItemProxy */;
+		};
+		B1CA59B5263CC5E800A94B94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1CA5991263CC5DC00A94B94 /* adidas */;
+			targetProxy = B1CA59B4263CC5E800A94B94 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B1CA59A0263CC5E700A94B94 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1CA59A1263CC5E700A94B94 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B1CA59BA263CC5E900A94B94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B1CA59BB263CC5E900A94B94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B1CA59BD263CC5E900A94B94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U583GUV3MQ;
+				INFOPLIST_FILE = adidas/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fadyyecob.adidas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B1CA59BE263CC5E900A94B94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U583GUV3MQ;
+				INFOPLIST_FILE = adidas/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fadyyecob.adidas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B1CA59C0263CC5E900A94B94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U583GUV3MQ;
+				INFOPLIST_FILE = adidasTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fadyyecob.adidasTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/adidas.app/adidas";
+			};
+			name = Debug;
+		};
+		B1CA59C1263CC5E900A94B94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U583GUV3MQ;
+				INFOPLIST_FILE = adidasTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fadyyecob.adidasTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/adidas.app/adidas";
+			};
+			name = Release;
+		};
+		B1CA59C3263CC5E900A94B94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U583GUV3MQ;
+				INFOPLIST_FILE = adidasUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fadyyecob.adidasUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = adidas;
+			};
+			name = Debug;
+		};
+		B1CA59C4263CC5E900A94B94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U583GUV3MQ;
+				INFOPLIST_FILE = adidasUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fadyyecob.adidasUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = adidas;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B1CA598D263CC5DC00A94B94 /* Build configuration list for PBXProject "adidas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1CA59BA263CC5E900A94B94 /* Debug */,
+				B1CA59BB263CC5E900A94B94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1CA59BC263CC5E900A94B94 /* Build configuration list for PBXNativeTarget "adidas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1CA59BD263CC5E900A94B94 /* Debug */,
+				B1CA59BE263CC5E900A94B94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1CA59BF263CC5E900A94B94 /* Build configuration list for PBXNativeTarget "adidasTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1CA59C0263CC5E900A94B94 /* Debug */,
+				B1CA59C1263CC5E900A94B94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1CA59C2263CC5E900A94B94 /* Build configuration list for PBXNativeTarget "adidasUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1CA59C3263CC5E900A94B94 /* Debug */,
+				B1CA59C4263CC5E900A94B94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B1CA598A263CC5DC00A94B94 /* Project object */;
+}
